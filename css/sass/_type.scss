@@ -1,0 +1,15 @@
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font-title;
+	font-weight: $font-bold;
+	color: $color-primary;
+}
+
+p {
+	font-family: $font-content;
+	font-weight: $font-regular;
+	color: $color-primary;
+}
+
+h3 {
+	font-size: 12px;
+}
