@@ -1,9 +1,16 @@
 header {
-	border: 1px solid red;
 	text-align: center;
 	padding-top: 20px;
 	img {
 		width: 89px;
+	}
+	#logo-text {
+		letter-spacing: 2;
+		font-size: 12px;
+		margin-top: 13px;
+		#logo-text-2 {
+			color: $color-middle;
+		}
 	}
 	
 }
