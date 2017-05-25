@@ -12,16 +12,35 @@
   background-size: cover;
   height: 400px; }
 
-header {
-  text-align: center;
-  padding-top: 20px; }
-  header img {
+header .logo {
+  border: 1px dashed pink; }
+  header .logo img {
     width: 89px; }
-  header #logo-text {
-    letter-spacing: 2;
-    font-size: 12px;
-    margin-top: 13px; }
-    header #logo-text #logo-text-2 {
-      color: #b32536; }
+
+.navbar-brand {
+  height: auto; }
+
+.nav {
+  padding: 35px 0;
+  float: right; }
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  background-color: #b32536; }
+
+body, p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500px;
+  color: #2a2a2a; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700px;
+  color: #2a2a2a; }
+
+a {
+  font-family: "Raleway", sans-serif;
+  color: #2a2a2a; }
 
 /*# sourceMappingURL=styles.css.map */

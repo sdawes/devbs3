@@ -1,0 +1,14 @@
+.navbar-brand {
+	height: auto;
+}
+
+.nav {
+	padding: 35px 0;
+	float: right;
+}
+
+.nav-pills > li.active > a, 
+.nav-pills > li.active > a:hover, 
+.nav-pills > li.active > a:focus {
+	background-color: $color-middle;
+}
