@@ -1,8 +1,5 @@
 .navbar {
-
-	.container {
-		// border: 1px solid lime;
-	}
+	background-color: $color-subtle;
 
 	.navbar-brand {
 		height: auto;
@@ -21,9 +18,50 @@
 				background-color: transparent;
 			}
 			.icon-bar {
-				background-color: $color-middle;
+				background-color: $color-special;
 			}
 		}
+	}
+
+	.navbar-nav {
+		margin: 0px -15px;
+	}
+
+	// nav list items
+	.navbar-nav > li > a:hover, 
+	.navbar-nav > li > a:focus {
+	    color: $color-primary;
+	    background-color: $color-highlight;
+	}
+
+	// active nav list items
+	.navbar-nav > .active > a, 
+	.navbar-nav > .active > a:hover, 
+	.navbar-nav > .active > a:focus {
+	    color: $color-white;
+	    background-color: $color-primary;
+	}
+
+	// drop down menu box
+	.dropdown-menu {
+		border-radius: 0;
+		top: 110%;
+	}
+
+	// dropdown menu items
+	.navbar-nav .open .dropdown-menu > li > a {
+	    color: rgba($color-primary, 0.5);
+	    &:hover,
+	    &:focus {
+	    	color: $color-primary;
+	    	background-color: transparent;
+	    }
+	}
+
+	// contact me link
+	.contact-me {
+		color: $color-special !important;
+		font-weight: 700;
 	}
 
 	// hamburger animation
@@ -72,8 +110,9 @@
 // ==============================================
 
 @media (min-width: 768px) {
-	#bs-example-navbar-collapse-1 {
+	#nav-elements {
 		float: right;
+		padding: 30px 0;
 	}
 }
 
