@@ -20,33 +20,54 @@
 
 		<header>
 			
-			<!-- navbar -->
 			<nav class="navbar navbar-default">
+			  <div class="container">
 
-				<div class="container">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
 
-					<!-- nav header and logo -->
-					<div class="navbar-header">
-						
-						<a href="/index.html" class="navbar-brand">
-							<img src="icons/logo.svg" alt="main logo">
-						</a>
+				    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				    	<span class="sr-only">Toggle navigation</span>
+				       	<span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				     </button>
 
-					</div>
+				    <a class="navbar-brand" href="#"><img src="icons/logo.svg" alt=""></a>
+			    </div>
 
-					<!-- nav links -->
-					<ul class="nav nav-pills">
-						<li><a href="#" class="active">About me</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Micro blog</a></li>
-						<li><a href="#">Projects</a></li>
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	
+					<!-- nav elements -->
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Blog<span class="sr-only">(current)</span></a></li>
+						<li><a href="#">Micro Blog</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Personal Website</a></li>
+								<li><a href="#">Wedding Seville</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">How I operate</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">Contacts</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Code Demos <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">JacaScript Drag and Drop</a></li>
+								<li><a href="#">Flexbox</a></li>
+							</ul>
+						</li>
 					</ul>
 
-					<!-- nav buttons -->
-					<!-- <button class="btn btn-primary navbar-btn navbar-right">Contact Me</button> -->
+					<!-- CTA -->
+					<!-- <button type="button" class="btn btn-default">Contact Me</button> -->
 
-				</div>
-
+			    </div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
 			</nav>
 
 		</header>

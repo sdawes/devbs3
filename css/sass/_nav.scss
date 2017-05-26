@@ -1,14 +1,83 @@
-.navbar-brand {
-	height: auto;
+.navbar {
+
+	.container {
+		// border: 1px solid lime;
+	}
+
+	.navbar-brand {
+		height: auto;
+	}
+
+	.navbar-header {
+		position: relative;
+		.navbar-toggle {
+			border: none;
+			background-color: none;
+			margin: 0;
+			padding: 48px 15px;
+
+			&:hover,
+			&:focus {
+				background-color: transparent;
+			}
+			.icon-bar {
+				background-color: $color-middle;
+			}
+		}
+	}
+
+	// hamburger animation
+
+	.navbar-default .navbar-toggle:focus,
+	.navbar-default .navbar-toggle:hover {
+	    background-color: transparent;
+	}
+
+	.navbar-default .navbar-toggle {
+	    border: none;
+	}
+
+	.navbar-toggle span.icon-bar {
+	    transition: all 0.15s;
+	}
+
+	.navbar-toggle span:nth-child(2) {
+
+	    transform: rotate(45deg);
+	    transform-origin: 10% 10%;
+	}
+
+	.navbar-toggle span:nth-child(3) {
+	    opacity: 0;
+	}
+
+	.navbar-toggle span:nth-child(4) {
+	    transform: rotate(-45deg);
+	    transform-origin: 10% 90%;
+	}
+
+	.navbar-toggle.collapsed span:nth-child(2),
+	.navbar-toggle.collapsed span:nth-child(4) {
+	    transform: rotate(0);
+	}
+
+	.navbar-toggle.collapsed span:nth-child(3) {
+	    opacity: 1;
+	}
+
 }
 
-.nav {
-	padding: 35px 0;
-	float: right;
+
+// media queries
+// ==============================================
+
+@media (min-width: 768px) {
+	#bs-example-navbar-collapse-1 {
+		float: right;
+	}
 }
 
-.nav-pills > li.active > a, 
-.nav-pills > li.active > a:hover, 
-.nav-pills > li.active > a:focus {
-	background-color: $color-middle;
-}
+
+
+
+
