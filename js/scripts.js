@@ -4,10 +4,3 @@ $(".nav li").on("click", function(){
 	$(this).addClass("active");
 });
 
-// hamburger animation
-$(document).ready(function(){
-	$('#hambuger').click(function(){
-		console.log('Hambuger icon clicked');
-		$(this).toggleClass('open');
-	});
-});
