@@ -1,5 +1,5 @@
 .slide1 {
-	background-image: url('../images/bg_image_1.jpg');
+	background-image: url('../../images/image_vr.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -7,9 +7,33 @@
 }
 
 .slide2 {
-	background-image: url('../images/bg_image_2.jpg');
+	background-image: url('../../images/image_css.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 400px;
+}
+
+// reduce left and right padding of carousel container in mobile view
+#carousel {
+	.container {
+	    padding-right: 0px;
+	    padding-left: 0px;
+	    margin-right: auto;
+	    margin-left: auto;
+	}
+}
+
+// media queries
+// =====================================
+
+@media (min-width: 768px) {
+	#carousel {
+		.container {
+		    padding-right: 15px;
+		    padding-left: 15px;
+		    margin-right: auto;
+		    margin-left: auto;
+		}
+	}
 }
